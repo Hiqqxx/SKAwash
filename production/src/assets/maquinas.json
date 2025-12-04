@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "nome": "Máquina 01",
+    "status": "LIVRE"
+  },
+  {
+    "id": 2,
+    "nome": "Máquina 02",
+    "status": "OCUPADA"
+  },
+  {
+    "id": 3,
+    "nome": "Máquina 03",
+    "status": "MANUTENÇÃO"
+  },
+  {
+    "id": 4,
+    "nome": "Máquina 04",
+    "status": "LIVRE"
+  }
+]

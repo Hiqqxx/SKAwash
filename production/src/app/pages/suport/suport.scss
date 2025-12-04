@@ -1,0 +1,108 @@
+.chatContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-back);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form {
+  height: 900px;
+  width: 100%;
+  max-width: 330px;
+  background: var(--color-back);
+  padding: 25px;
+  border-radius: 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+.logo{
+    width: 120px;
+    margin: 0 auto;
+}
+.mensagens{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+.msgBot{
+    width: 300px;
+    background-color: var(--color-main);
+    color: var(--color-text-2);
+    border-radius: 10px;
+    margin-right: auto;
+    padding: 10px;
+}
+.msgDigitando{
+    padding: 10px;
+    background-color: var(--color-icons);
+    width: 70px;
+    text-align: center;
+    color: var(--color-text-2);
+    border-radius: 10px;
+    margin-left: auto;
+}
+.inputArea{
+    height: 35px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-cards);
+    border: 2px solid var(--color-icons);
+    border-radius: 40px;
+    padding: 5px;
+    gap: 8px;
+}
+.inputArea input{
+    background-color: var(--color-cards);
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+.sendBtn{
+    background-color: transparent;
+    border: none;
+}
+.sendBtn img{
+    width: 22px;
+}
+
+
+
+.footerNav {
+  width: 100%;
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: var(--color-cards);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.navBtn {
+  width: 55px;
+  height: 45px;
+  background: var(--color-cards);
+  border: 1px solid var(--color-cards);
+  border-radius: 15px;
+  font-size: 20px;
+  color: var(--color-icons);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.navBtn img{
+  width: 28px;
+  height: 28px;
+}
+

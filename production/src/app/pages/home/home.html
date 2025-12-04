@@ -1,0 +1,38 @@
+<div class="loginContainer">
+  <div class="form">
+
+    <img class="logo" src="../../../assets/logo.png" alt="Logo Skawash"/>
+
+  <div class="historyList">
+  <div class="machineItem" *ngFor="let item of lista" [routerLink]="['/maquina', item.id]">
+    
+    <div class="iconBox">
+      <img src="../../../assets/machine.png" alt="icone" />
+    </div>
+
+    <div class="machineName">
+      {{item.nome}}
+    </div>
+
+    <div class="machineStatus" [ngClass]="item.status">
+      {{item.status}}
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+  <footer class="footerNav">
+  <button (click)="onHome()" class="navBtn">
+    <img src="../../../assets/casa2.png" alt="Home">
+  </button>
+  <button (click)="onHistorico()" class="navBtn">
+    <img src="../../../assets/historia2.png" alt="Histórico">
+  </button>
+  <button (click)="onSuport()" class="navBtn">
+    <img src="../../../assets/conversacao2.png" alt="Suporte">
+  </button>
+</footer>
+
+

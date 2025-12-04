@@ -1,0 +1,74 @@
+.loginContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-back);
+  padding: 20px;
+}
+.form {
+
+    height:700px ;
+  width: 100%;
+  max-width: 330px;
+  background: var(--color-main);
+  padding: 25px;
+  border-radius: 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}   
+img{
+    height: 190px;
+    width: 240px;
+    margin: 10px auto 40px auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+input {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid var(--color-cards);
+  border-radius: 14px;
+  font-size: 16px;
+  margin-top: 19px;
+  height: 80px;
+}
+.btnLogin {
+  background: var(--color-icons);
+  border: none;
+  padding-top: 500px;
+  padding: 12px;
+  border-radius: 15px;
+  color: var(--color-text-2);
+  font-weight: bold;
+  cursor: pointer;
+  height: 90px;
+  width: 98%;
+}
+.forgot {
+  font-size: 17px;
+  text-align: center;
+  color: var(--color-text-2);
+  margin-top: -5px;
+}
+.ou {
+  text-align: center;
+  color: var(--color-text-2);
+  margin: 5px 0;
+}
+.btnCreate {
+  background: var(--color-back);
+  border: 1px solid var(--color-cards);
+  padding: 12px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--color-main);
+  width: 98%;
+  height: 90px;
+}

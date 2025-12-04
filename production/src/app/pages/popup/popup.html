@@ -1,0 +1,18 @@
+<div class="popup">
+    <div class="popupCard">
+
+        <h2 class="popupTitle">{{ titulo }}</h2>
+        <p class="popupMessage">{{ mensagem }}</p>
+
+        <div class="popupButtons">
+            <button class="PopupOk" (click)="confirmarEmit()">
+                {{ textoOk }}
+            </button>
+            <button *ngIf="showCancel"
+                class="popupCancel"
+                (click)="cancelarEmit()">
+                {{ textoCancelar }}
+            </button>
+        </div>
+    </div>
+</div>

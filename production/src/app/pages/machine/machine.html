@@ -1,0 +1,85 @@
+<div class="loginContainer">
+  <div class="form">
+<div (click)="onHome()" class="back">
+⬅
+</div>
+  <img class="logo" src="../../../assets/MachineLogo.png"/>
+
+<div class="container" *ngIf="maquina">
+  <h2 class="titulo">MÁQUINA {{ maquina.id }}</h2>
+  <img class="imgMachine" src="../../../assets/Machineimg.png"/>
+  <div class="timerDonut">
+    <div class="timer">
+    {{ formatarTempo() }}
+    </div>
+  </div>
+  <p class="restante">Restantes</p>
+
+
+  <!-- //tentativa de fazer as etapas se colorir -->
+  <div class="etapas">
+
+    <div class="etapa">
+      <span [class.active]="etapaLavagemActive" [class.inactive]="!etapaLavagemActive"></span>
+      Lavagem
+    </div>
+    <div class="etapa">
+      <span [class.active]="etapaEnxagueActive" [class.inactive]="!etapaEnxagueActive"></span>
+      Enxágue
+    </div>
+    <div class="etapa">
+      <span [class.active]="etapaCentrifugacaoActive" [class.inactive]="!etapaCentrifugacaoActive"></span>
+      Centrifugação
+    </div>
+    <div class="etapa">
+      <span [class.active]="etapaFinalizadoActive" [class.inactive]="!etapaFinalizadoActive"></span>
+      Finalizado
+    </div>
+  </div>
+
+  <button class="btnNotif">
+    Notificar quando terminar
+  </button>
+</div>
+  </div>
+</div>
+
+<app-popup
+*ngIf="popInicio"
+titulo="Iniciar lavagem?"
+mensagem="Lembre se de apenas iniciar a lavagem quando estiver presente no local."
+textoOk="Sim"
+textoCancelar="Cancelar"
+[showCancel]="true"
+(confirmar)="iniciarLavagem()"
+(cancelar)="cancelarInicio()">
+</app-popup>
+
+<app-popup
+*ngIf="pop15min"
+titulo="Aviso"
+mensagem="Já se passaram 15 minutos desde o inicio da sua lavagem!"
+textoOk="Ok"
+[showCancel]="false"
+(confirmar)="fecharAviso15()">
+</app-popup>
+
+<app-popup
+*ngIf="popFim"
+titulo="Lavagem Concluída!"
+mensagem="Sua lavagem chegou ao fim, lembre-se de retirar todos seus pertences!"
+textoOk="Ok"
+[showCancel]="false"
+(confirmar)="fecharFim()">
+</app-popup>
+
+<app-popup
+*ngIf="popIndisponivel"
+titulo="Atenção"
+mensagem="Esta máquina está ocupada/em manutenção, escolha outra máquina."
+textoOk="Entendi"
+[showCancel]="false"
+(confirmar)="voltarParaInicio()">
+</app-popup>
+
+

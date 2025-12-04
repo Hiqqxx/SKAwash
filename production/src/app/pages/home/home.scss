@@ -1,0 +1,164 @@
+.loginContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-main);
+  padding: 20px;
+}
+.form {
+  height: 750px;
+  width: 100%;
+  max-width: 330px;
+  background: var(--color-back);
+  padding: 25px;
+  border-radius: 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+.logo {
+    height: 160px;
+    width: 210px;
+    margin: 10px auto 40px auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+
+}
+.title {
+  text-align: center;
+  font-size: 16px;
+  color: var(--color-main);
+  margin-bottom: 25px;
+
+  span {
+    color: var(--color-icons);
+    font-weight: bold;
+    font-size: 15px;
+  }
+}
+.historyList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.item {
+  width: 100%;
+  background: var(--color-cards);
+  border-radius: 18px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--color-cards);
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.date {
+  font-weight: bold;
+  color: var(--color-icons);
+  font-size: 14px;
+}
+.price {
+  font-size: 14px;
+  color: var(--color-main);
+}
+.status {
+  padding: 6px 14px;
+  background: var(--color-icons);
+  border-radius: 14px;
+  color: var(--color-text-2);
+  font-weight: bold;
+  font-size: 13px;
+}
+
+//por algum motivo que eu não entendi, o footer não completa a página.
+.footerNav {
+  width: 100%;
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: var(--color-cards);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.navBtn {
+  width: 55px;
+  height: 45px;
+  background: var(--color-cards);
+  border: 1px solid var(--color-cards);
+  border-radius: 15px;
+  font-size: 20px;
+  color: var(--color-icons);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.navBtn img{
+  width: 28px;
+  height: 28px;
+}
+.nome{
+    color: black;
+}   
+.historyList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.machineItem {
+  width: 90%;
+  height: 80px;
+  background: var(--color-cards);
+  border-radius: 20px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  border: 1px solid var(--color-back);
+}
+.iconBox img {
+  width: 80px;
+  height: 90px;
+}
+.machineName {
+  flex: 1;
+  font-size: 15px;
+  font-weight: bold;
+}
+.machineStatus {
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.LIVRE {
+  background-color: var(--color-ready);
+  color: var(--color-text-2);
+}
+
+.OCUPADA {
+  background: var(--color-busy);
+  color: var(--color-text-2);
+}
+
+.MANUTENÇÃO {
+ background-color: var(--color-maintenance);
+ color: var(--color-text-2);
+}

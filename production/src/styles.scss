@@ -1,0 +1,36 @@
+
+.comfortaa {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', 'Montserrat';
+}
+
+:root {
+//font style 
+--color-text: #0A385F;
+--color-text-input: #58A4B0;
+--color-text-2: #FFFFFF;
+
+//styles
+--color-main: #58A4B0;
+--color-icons: #FF9EB5;
+--color-cards: #F1F1F1;
+--color-back: #FFFFFF;
+
+//status
+--color-busy: #FF6B6B;
+--color-maintenance: #FFD166;
+--color-ready: #6BCB77;
+
+//popups
+--color-reminder: #FFD166;
+--color-attention: #FF9EB5;
+--color-warning: #58A4B0;
+}
